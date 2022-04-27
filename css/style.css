@@ -1,0 +1,110 @@
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14pt;
+    font-weight: regular;
+    color: black;
+}
+
+h1 {
+    text-align: inline;
+    font-family: 'Satisfy', cursive;
+    font-size: 30pt;
+    color: navy;
+}
+
+h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 45 pt;
+}
+
+h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 21pt;
+    font-weight: semibold;
+    color: skyblue;
+}
+/* this is navigation */
+#navBar {
+    color: skyblue;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+    cursor: pointer;
+}
+
+#logo h1 {
+    display: inline-flex;
+    text-align: left;
+}
+
+#navigation {
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    padding: 10px;
+}
+
+a:link {
+    color: #87CEEB;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #87CEEB;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #213842;
+    text-decoration: underline;
+}
+
+a h3:hover {
+    color: #213842;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #87CEEB;
+    text-decoration: none;
+}
+
+/*this is hero grid  */
+#heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-areas: "heroImage"
+
+}
+
+#heroImage {
+    grid-area: heroImage;
+    background-image: url("../photos/imageofme.jpg");
+}
+
+
+#headline {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 5px solid navy;
+    position: absolute;
+    right: -50px;
+    top: 100px;
+    max-width: 550px;
+    z-index: 100;
+    padding: 25px;
+}
+
+.heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
